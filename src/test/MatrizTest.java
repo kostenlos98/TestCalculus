@@ -12,7 +12,7 @@ public class MatrizTest
     @Before 
     public void setUp()
     {
-   
+    		
     }
     
     @After
@@ -142,5 +142,10 @@ public class MatrizTest
     		Assert.fail("Crashea por causas desconocidas, no inserta el valor correctamente");
     	}
     	Assert.assertEquals(6.0, v, 0.00001);
+    }
+    
+    public void nada()
+    {
+    	
     }
 }

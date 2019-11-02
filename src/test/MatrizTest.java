@@ -143,9 +143,5 @@ public class MatrizTest
     	}
     	Assert.assertEquals(6.0, v, 0.00001);
     }
-    
-    public void nada()
-    {
-    	
-    }
-}
+}    
+

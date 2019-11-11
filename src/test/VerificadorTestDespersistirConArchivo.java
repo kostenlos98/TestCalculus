@@ -31,9 +31,9 @@ public class VerificadorTestDespersistirConArchivo {
 			File carpetaDatos = new File(sCarpAct+"\\Datos");
 			if(!carpetaDatos.exists())
 				carpetaDatos.mkdir();
-			archivo = new File(sCarpAct+"\\Datos\\mat1.txt");
+			archivo = new File(sCarpAct+"\\Datos\\mat1.mat");
 			this.crearArchivo(archivo);
-			archivo = new File(sCarpAct+"\\Datos\\mat2.txt");
+			archivo = new File(sCarpAct+"\\Datos\\mat2.mat");
 			this.crearArchivo(archivo);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -46,9 +46,9 @@ public class VerificadorTestDespersistirConArchivo {
 		File archivo;
 		this.verificador = null;
 		String sCarpAct = System.getProperty("user.dir"),cad="";
-		archivo = new File(sCarpAct+"\\Datos\\mat1.txt");
+		archivo = new File(sCarpAct+"\\Datos\\mat1.mat");
 		archivo.delete();
-		archivo = new File(sCarpAct+"\\Datos\\mat2.txt");
+		archivo = new File(sCarpAct+"\\Datos\\mat2.mat");
 		archivo.delete();
 	}
 	
@@ -93,7 +93,7 @@ public class VerificadorTestDespersistirConArchivo {
 	}
 
 	@Test
-	public void despersistirConArchivoTest_1(){
+	public void despersistirConArchivoTest_3(){
 		String cadena = "d mat1";
 		try {
 			verificador.verficaComando(cadena);
@@ -119,7 +119,7 @@ public class VerificadorTestDespersistirConArchivo {
 	}
 	
 	@Test
-	public void despersistirConArchivoTest_3(){
+	public void despersistirConArchivoTest_4_5(){
 		String cadena = "r mat3 mat5";
 		try {
 			verificador.verficaComando(cadena);
@@ -146,7 +146,7 @@ public class VerificadorTestDespersistirConArchivo {
 	}
 	
 	@Test
-	public void despersistirConArchivoTest_1_4(){
+	public void despersistirConArchivoTest_1_5(){
 		String cadena = "m mat1 mat3";
 		try {
 			verificador.verficaComando(cadena);

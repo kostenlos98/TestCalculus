@@ -111,6 +111,25 @@ public class VerificadorFuncionTest {
     /* ====================================================
 	    TEST DE CAJA NEGRA
     ==================================================== */
+    
+    @Test
+    public void testExtension1_1() {
+    	Verificador v = new Verificador();
+    	assertTrue(v.verificaExtension("matriz.mat"));
+    }
+    
+    @Test
+    public void testExtension1_2() {
+    	Verificador v = new Verificador();
+    	assertFalse(v.verificaExtension("matriz"));
+    }
+
+    @Test
+    public void testExtension1_3() {
+    	Verificador v = new Verificador();
+    	assertFalse(v.verificaExtension(""));
+    }
+    
     @Test
     public void testEscenario1() {
 	final int n = 1;

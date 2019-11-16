@@ -1,4 +1,4 @@
-package modelo;
+package test;
 
 import excepciones.Error004;
 import excepciones.Error005;
